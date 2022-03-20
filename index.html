@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link Style-->
+    <link rel="stylesheet" href="style.css">
+    <!--Titulo-->
     <title>HTML y CSS</title>
 </head>
 <body>
@@ -65,7 +68,7 @@
                         <h2>Imagenes</h2>
                         <p>Estas se agregan con la etiqueta img src="(URL o Dirección de la imagen)"</p>
                         <p>Sin olvidar el atributo alt escencial para las imagenes</p>
-                        <a href="Imagenes/KarenAraragi.jpeg" target="_blank"><img src="Imagenes/KarenAraragi.jpeg" alt="Karen Araragi"></a>
+                        <a href="Imagenes/KarenAraragi.jpeg" target="_blank"><img class="borde" src="Imagenes/KarenAraragi.jpeg" alt="Karen Araragi"></a>
                     </div>
                     <div class="content-info-cuadro">
                         <h2>Links</h2>
@@ -91,7 +94,7 @@
                         </p>
                         <p>Enlace muerto <a href="#" target="_blank">aca</a></p>
                         <p>Esta es una imagen con link que te manda a la pagina de la actriz de voz de TougeguchiGOD</p>
-                        <a href="https://myanimelist.net/people/11236/Shiori_Mikami" target="_blank"><img src="Imagenes/Tougeguchi.png" alt="Tougeguchi"></a>
+                        <a href="https://myanimelist.net/people/11236/Shiori_Mikami" target="_blank"><img id="TougeguchiGOD" class="borde circle" src="Imagenes/Tougeguchi.png" alt="Tougeguchi"></a>
                     </div>
                     <div class="content-info-cuadro">
                         <h2>Listas: Ordenadas y no ordenadas</h2>
@@ -177,7 +180,7 @@
                             nos den el texto que queremos extraer de la respuesta.
                         </p>
                     </div>
-                    <div class="conten-info-cuadro">
+                    <div class="content-info-cuadro">
                         <h2>Divisores</h2>
                         <p>
                             Estos divisores expresados con la etiqued div nos ayudan a dividir los elementos de nuestra
@@ -190,6 +193,61 @@
                     </div>     
                 </div> 
             </div> 
+            <div class="content-info-css">
+                <div class="content-info-cuadro">
+                    <h2>Colores</h2>
+                    <p>
+                        Se puede cambiar el color de un texto poniendo un atributo style, pero no es
+                        bueno agregar esto debido a que a la hora de corregir cosas se entrelazan los archivos
+                        html y css.
+                    </p>
+                    <p>
+                        Lo que debemos hacer es un archivo css para que ahi tengamos todas las propiedades que queramos
+                        añadir.
+                    </p>
+                    <p>
+                        Cambiare el color del texto.
+                    </p>
+                </div>
+                <div class="content-info-cuadro">
+                    <h2>Tamaños</h2>
+                    <p>
+                        Con font-size podemos cambiar los tamaños, por ejemplo de las letras
+                    </p>
+                    <p class="bigger">
+                        Texto Grande.
+                    </p>
+                    <p>
+                        También se puede cambiar el tamaño de las imagenes, para poder manejarlas mejor. Con los atributos width y height. 
+                    </p>
+                    <a href="Imagenes/Yotsugi.jpg" target="_Blank"><img class ="borde" src="Imagenes/Yotsugi.jpg" alt="Yotsugi Ononoki"></a>
+                </div>
+                <div class="content-info-cuadro">
+                    <h2>Tipo de fuente</h2>
+                    <p>
+                        Este atributo lo podemos cambiar con font-family, puede recibir 2 tipos de escritura, el primero que es el principal
+                        y el segundo que se usa cuando no esta disponible el principal.
+                    </p>
+                </div>
+                <div class="content-info-cuadro">
+                    <h2>Bordes</h2>
+                    <p class="borde">
+                        Se agregan con border-color, border-width y border-style y acepta los atributos color, grosor y tipo respectivamente.
+                    </p>
+                    <p>
+                        Otro aspecto es el de border-radius que aplica una curvatura a los bordes. Se puede ver en la imagen de <a href="#TougeguchiGOD">TougeguchiGOD</a>
+                    </p>
+                </div>
+                <div class="content-info-cuadro">
+                    <h2>Color de fondo</h2>
+                    <p>Background-color es el atributo para cambiar el color de fondo de un elemento.</p>
+                    <p>Vamos a poner un color de fondo para la página.</p>
+                </div>
+                <div class="content-info-cuadro">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
         </main> 
     </div>
 </body>
