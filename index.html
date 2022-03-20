@@ -7,6 +7,158 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    <div class="content-info">
+        <main>
+            <h1 id="Inicio">Hola Mundo</h1>
+            <h2>Bienvenidos a mi pagina web</h2>
+            <p>
+                En esta pagina describiremos todo lo que aprenda de
+                las paginas web HTML y CSS principalmente.
+            </p>
+            <div class="content-info-primero">
+                <h2>Elementos H</h2>
+                <p>
+                    Son titulos que se pueden poner de manera predeterminada,
+                    además se le agrega un número consiguiente para degradar su 
+                    tamaño. 
+                </p>
+                <p>
+                    Por ejemplo: h1, h2, h3, h4, h5, h6. 
+                </p>
+                <h2>Los elementos p</h2>
+                <p>
+                    Se usan para escribir parrafos largos y listo calisto.
+                </p>
+                <h2>Comentarios</h2>
+                <p>
+                    Los comentarios se pueden agregar encerrando lo que quieres
+                    en una sentencia algo así:
+                </p>
+                <!--No es gracioso pero aqui no puedo poner directamente los comentarios porque no
+                se verian-->
+                <p>
+                    Menor que, signo de exclamación hacia abajo, guión, guión, cosa que quieres comentar,
+                    guión, guión, mayor que. 
+                </p>
+                <h2>Etiquetas descriptivas de HTML5</h2>
+                <p>Describen mejor las partes que tiene tu pagina web</p>
+                <ul>
+                    <li>main</li>
+                    <li>header: Dentro de head se almacenan los metadatos tales como link, meta, title y style</li>
+                    <li>footer</li>
+                    <li>nav</li>
+                    <li>video</li>
+                    <li>article</li>
+                    <li>section</li>
+
+                </ul> 
+                <h2>Imagenes</h2>
+                <p>Estas se agregan con la etiqueta img src="(URL o Dirección de la imagen)"</p>
+                <p>Sin olvidar el atributo alt escencial para las imagenes</p>
+                <a href="Imagenes/KarenAraragi.jpeg"><img src="Imagenes/KarenAraragi.jpeg" alt="Karen Araragi"></a>
+                <h2>Links</h2>
+                <p>
+                    Los links se pueden hacer de varias maneras, la más común es la de 
+                    tener un texto que sea un link.
+                </p>
+                <p>
+                    Por ejemplo podemos hacer que la palabra <a href="https://es.wikipedia.org/wiki/Monogatari_(serie)" target="_blank">Monogatari</a>  sea una que lleve un link. 
+                </p>
+                <p>
+                    La etique tiene es llama "a" por anchor, que significa ancla en ingles
+                </p>
+                <p>
+                    Lo que debemos hacer es encerrarla con una etiqueta "a href="(Link hacia donde queremos)"".
+                </p>
+                <p>Otro uso que podemos darle; la navegación dentro de la pagina web</p>
+                <p>Simplemente tenemos que agrear un atributo id con un valor de "nombre" a la etiqueta que queramos desplazarnos
+                    y a su vez, crear un anchor con atributo de href = #nombre para que vaya hacia ese lugar.
+                </p>
+                <p>
+                    Pruebalo aqui: <a href="#Inicio">Inicio</a>
+                </p>
+                <p>Enlace muerto <a href="#" target="_blank">aca</a></p>
+                <p>Esta es una imagen con link que te manda a la pagina de la actriz de voz de TougeguchiGOD</p>
+                <a href="https://myanimelist.net/people/11236/Shiori_Mikami" target="_blank"><img src="Imagenes/Tougeguchi.png" alt="Tougeguchi"></a>
+                <h2>Listas: Ordenadas y no ordenadas</h2>
+                <p>
+                    Estas listas pueden estar ordenadas o no, por lo que son muy utiles cuando no tienes
+                    que estas escribiendo tantos parrafos nomas para que se vean en columna.
+                </p>
+                <p>Lista no ordenada</p>
+                <ul>
+                    <li>Salamandra</li>
+                    <li>Antojos</li>
+                    <li>Licuados</li>
+                    <li>Vegetales</li>
+                </ul>
+                <p>Lista ordenada</p>
+                <ol>
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                </ol>
+            </div>
+            <div class="content-info-segundo">
+                <h2>Formularios de los deadeberas</h2>
+                <p>
+                    Estos formularios tienen una etiqueta action que les permite mandar a una URL
+                    los datos que tu introduzcas.
+                </p>
+                <p>Todavia no lo puedo mostrar una disculpa.</p>
+                <h2>Campos de texto</h2>
+                <p>Son elementos para que el usuario pueda introducir datos.</p>
+                <p>Por ejemplo:</p>
+                <p>Escribe tu waifu preferida, ahora:</p>
+                <input type="text" placeholder="Waffle">
+                <p>No tiene funcionalidad debido a que es solo un cuadro de texto</p>
+                <h2>Botones</h2>
+                <p>El tipico boton que se utiliza para hacer funcionar algo</p>
+                <button type="">Mandar info</button>
+                <h2 id="required">Requerimientos de formulario</h2>
+                <p>
+                    Puedes agregar required a un campo de entrada de texto para que sea obligatorio
+                    rellenarlo.
+                </p>
+                <h2>Botones de radio</h2>     
+                <p>Se requiere que solo una opcion de las 3 sea vigente</p>
+                <p>Eres...</p>
+                <label for="tipo"> 
+                    <input type="radio" name="tipo" id="sensible" value="sensible" checked>Sensible
+                </label>
+                <label for="tipo">
+                    <input type="radio" name="tipo" id="agresivo" value="agresivo">Agresivo
+                </label>
+                <label for="tipo">
+                    <input type="radio" name="tipo" id="calmado" value="calmado">Calmado
+                </label>
+                <h2>Casillas de verificación</h2>
+                <p>A diferencia de las checkboxes estas casillas deberian de poder selecionar varias opciones</p>
+                <label for="Chequea">
+                    <input type="checkbox" name="Andrajoso" id="Chequea" value="Andrajoso" checked>Andrajoso
+                </label>
+                <label for="Check">
+                    <input type="checkbox" name="Ambivalente" id="Check" value="Ambivalente">Ambivalente
+                </label>
+                <p>Se puede marcar por defecto alguna de las opciones ya sea checkbox o casilla</p>
+                <p>
+                    Similar al atributo <a href="#required">required</a> este atributo llamado checked lo usamos
+                    cuando queramos tener una opcion marcada por defecto.
+                </p>
+                <h2>Value</h2>
+                <p>
+                    Se le agrega el atributo value a los botones de radio y checkbox para que den al extraer la informacipon
+                    nos den el texto que queremos extraer de la respuesta.
+                </p>
+                <h2>Divisores</h2>
+                <p>
+                    Estos divisores expresados con la etiqued div nos ayudan a dividir los elementos de nuestra
+                    página web para que sea mas facil manipularlos y darles cierto estilo.
+                </p>               
+                <h2>Doctype</h2>
+                <p>Se debe agregar !DOCTYPE al principio de un archivo HTML</p>
+            </div>   
+        </main> 
+    </div>
 </body>
 </html>
