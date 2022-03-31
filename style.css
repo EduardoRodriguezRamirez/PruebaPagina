@@ -66,8 +66,24 @@ img{
     padding: 15px;
     text-align: justify;
     z-index: 1;
-    
+    animation-name: regreso;
+    animation-duration: 1000ms;
+    position: relative;
 }
+@keyframes regreso {
+    0%{
+        left: 5px;
+        top: 5px;
+        box-shadow: 0 20px 30px var(--sombra), 0 20px 30px var(--sombra);
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+        box-shadow: 0 10px 20px var(--sombra), 0 5px 5px var(--sombra);
+    }
+
+}
+
 .nav{
     text-align: center;
     background-color: rgb(226, 242, 255);
@@ -91,10 +107,8 @@ img{
 .content-info-cuadro:hover{
     position: relative;
     animation-name: desplazamiento;
-    animation-duration: 500ms;
+    animation-duration: 300ms;
     animation-fill-mode: forwards;
-    animation-delay: 200ms;
-    
 }
 
 @keyframes desplazamiento{
