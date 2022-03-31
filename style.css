@@ -10,6 +10,26 @@
 body{
     background-color: var(--fondo);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23000000' fill-opacity='0.14' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    animation-name: cambiofondo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes cambiofondo{
+    0%{
+        background-color: var(--fondo);
+    }
+    25%{
+        background-color: rgb(255, 145, 0);
+    }
+    50%{
+        background-color: rgb(221, 91, 16);
+    }
+    75%{
+        background-color: rgb(255, 145, 0);
+    }
+    100%{
+        background-color: var(--fondo);
+    }
 }
 .bigger{
     font-size: 30px;
@@ -46,6 +66,7 @@ img{
     padding: 15px;
     text-align: justify;
     z-index: 1;
+    
 }
 .nav{
     text-align: center;
@@ -56,6 +77,9 @@ img{
     left:0px;
     right:0px;
     z-index: 2;
+    border-style: none;
+    border-radius: 0;
+    border-bottom: 3px solid var(--borde);
 }
 .content-info-links{
     background-color: rgb(226, 242, 255);
@@ -65,13 +89,25 @@ img{
     text-align: left;
 }
 .content-info-cuadro:hover{
-    border-color: rgb(128,106,78);
-    border-color: var(--borde-hover);
-    box-shadow: 0 10px 20px rgba(0,0,0, 0.2), 0 5px 5px rgba(0,0,0, 0.2);
-    box-shadow: 0 20px 30px var(--sombra), 0 20px 30px var(--sombra);
     position: relative;
-    left: 5px;
-    top: 5px
+    animation-name: desplazamiento;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    
+}
+
+@keyframes desplazamiento{
+    0%{
+        left: 0px;
+        top: 0px;
+        box-shadow: 0 10px 20px var(--sombra), 0 5px 5px var(--sombra);
+    }
+    100%{
+        left: 5px;
+        top: 5px;
+        box-shadow: 0 20px 30px var(--sombra), 0 20px 30px var(--sombra);
+    }
 }
 .content-info-cuadro h2{
     margin: 0px 0px 10px 0px;
@@ -151,4 +187,20 @@ img{
     width: fit-content;
     height: fit-content;
     margin: auto;
+}
+#cuadro1{
+    background-color: aqua;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    margin-top: 10px;
+    transform: skewX(5deg);
+}
+#cuadro2{
+    background-color:greenyellow;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    margin-top: 30px;
+    transform: skewY(5deg);
 }
